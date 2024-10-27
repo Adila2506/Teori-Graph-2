@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title>Mathnet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title>Mathnet</title>
+	<script src="https://kit.fontawesome.com/6b080b2b1e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+<body >
+
+<div class="home">
+	<nav>
+		<h2 class="logo"><img src="logo.png"></h2>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="About us.htm">ABOUT</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">TOPIC</a>
+					<div class="dropdown-content">
+						<a href="Graph Sederhana dan Multigraph.html">Graph Sederhana dan Multigraph</a>
+						<a href="Subgraph.htm">Subgraph</a>
+						<a href="Graph Khusus.htm">Graph Khusus</a>
+					</div>
+			</li>
+			<li><a href="Contact Us 2.php">CONTACT US</a></li>
+		</ul>
+		<a  href="login.html" class="user"><i class="fa-solid fa-user"></i></a></li>
+        <div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+	</nav>
+	<style>
+		body{
+			background-image: url('loginbg1.jpg');
+			background-position-y:98px;
+			background-repeat: no-repeat;
+			width: 100%
+		}
+	</style>
+	<div class="wrapper">
+		<div class="form-box login">
+			<h2>Login</h2>
+			<form action="#" method="post">
+				<div class="form-input">
+					<span class="icon"><i class="fa-solid fa-envelope"></i></span>
+					<input type="email" name="email" required>
+					<label>Email</label>
+				</div>
+				<div class="form-input">
+					<span class="icon"><i class="fa-solid fa-lock"></i></span>
+					<input type="password" name="password" required>
+					<label>Password</label>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox" name="remember"> Remember me</label>
+					<a href="#">Forgot Password?</a>
+				</div>
+				<button type="submit" class="btn2">Login</button>
+				<div class="login-register">
+					<p>Don't have an account? <a href="#" class="register-link"> Register</a></p>
+				</div>
+			</form>
+		</div>
+		<div class="form-box register">
+			<h2>Registration</h2>
+			<form action="#" method="post">
+				<div class="form-input">
+					<span class="icon"><i class="fa-solid fa-user"></i></span>
+					<input type="text" name="username" required>
+					<label>Username</label>
+				</div>
+				<div class="form-input">
+					<span class="icon"><i class="fa-solid fa-envelope"></i></span>
+					<input type="email" name="email" required>
+					<label>Email</label>
+				</div>
+				<div class="form-input">
+					<span class="icon"><i class="fa-solid fa-lock"></i></span>
+					<input type="password" name="password" required>
+					<label>Password</label>
+				</div>
+				<div class="remember-forgot">
+					<label><input type="checkbox"> I agree to the terms & conditions</label>
+				</div>
+				<button type="submit" class="btn2"> Register</button>
+				<div class="login-register">
+					<p>Already have an account? <a href="#" class="login-link"> Login</a></p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const wrapper = document.querySelector('.wrapper');
+		const loginlink = document.querySelector('.login-link');
+		const registerlink = document.querySelector('.register-link');
+
+		registerlink.addEventListener('click', ()=> {
+			wrapper.classList.add('active');
+		});
+		loginlink.addEventListener('click', ()=> {
+			wrapper.classList.remove('active');
+		});
+
+	</script>
+</body>
+</html>

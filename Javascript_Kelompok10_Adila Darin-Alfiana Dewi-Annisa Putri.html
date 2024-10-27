@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<h2> Kelompok 10 </h2>
+<p> Nama Anggota Kelompok </p>
+<ol>
+	<li>Adila Darin Nadifah (210311624922)</li>
+	<li>Alfiana Dewi Rachmawati (210311624918)</li>
+	<li>Annisa Putri Rahmawati (210311624913)</li>
+</ol>
+<h4> Kalkulator Sederhana </h4>
+
+<form action="/action_page.php">
+  <label for="bil1">Bil 1</label>
+  <input type="text" id="bil1" name="bil1"><br><br>
+  <label for="bil2">Bil 2</label>
+  <input type="text" id="bil2" name="bil2"><br><br>
+  <label for="hasil">Hasil</label>
+  <input type="text" id="hasil" name="hasil"><br><br>
+</form> 
+
+<button onclick="myFunction()">+</button>
+<button onclick="myFunction1()">-</button>
+<button onclick="myFunction2()">x</button>
+<button onclick="myFunction3()">/</button>
+
+<script text="text/javascript">
+function myFunction (){
+bil1=eval(document.getElementById("bil1").value);
+bil2=eval(document.getElementById("bil2").value);
+hasil=bil1+bil2;
+document.getElementById("hasil").value=hasil;
+}
+function myFunction1 (){
+bil1=eval(document.getElementById("bil1").value);
+bil2=eval(document.getElementById("bil2").value);
+hasil=bil1-bil2;
+document.getElementById("hasil").value=hasil;
+}
+function myFunction2 (){
+bil1=eval(document.getElementById("bil1").value);
+bil2=eval(document.getElementById("bil2").value);
+hasil=bil1*bil2;
+document.getElementById("hasil").value=hasil;
+}
+function myFunction3 (){
+bil1=eval(document.getElementById("bil1").value);
+bil2=eval(document.getElementById("bil2").value);
+hasil=bil1/bil2;
+document.getElementById("hasil").value=hasil;
+}
+</script>
+</head>
+</body>
+</html>

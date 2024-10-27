@@ -1,0 +1,66 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: #efefef;
+}
+
+/*Style the header*/
+h2 {
+  font-family: Helvetica;
+  text-align: center;
+  padding: auto;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left column */
+.column.side {
+  float: left;
+  width: 70%;
+  background: #efefef;
+  height: auto; /* only for demonstration, should be removed */
+  padding: 20px 20px 0px 20px;
+  padding bottom: 0px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: helvetica;
+}
+
+/*right column */
+.column.right {
+  float: right;
+  padding: 20px;
+  background: #efefef;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Style the footer */
+.footer {
+  float: left;
+  width: 100%;
+  height: auto; /* only for demonstration, should be removed */
+  background: #efefef;
+  padding: 0px 0px 50px 20px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: helvetica ;
+}
+/* Clear floats after the columns */
+row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+

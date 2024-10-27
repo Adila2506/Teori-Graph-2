@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <meta http-equiv="X-UA Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <title>Mathnet</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://kit.fontawesome.com/6b080b2b1e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+<body>
+
+<div class="home">
+  <nav>
+    <h2 class="logo"><img src="logo.png"></h2>
+    <ul>
+      <li class="active"><a href="index.html">HOME</a></li>
+      <li><a href="About us.htm">ABOUT</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">TOPIC</a>
+          <div class="dropdown-content">
+            <a href="Graph Sederhana dan Multigraph.html">Graph Sederhana dan Multigraph</a>
+            <a href="Subgraph.htm">Subgraph</a>
+            <a href="Graph Khusus.htm">Graph Khusus</a>
+          </div>
+      </li>
+      <li><a href="Contact Us 2.php">CONTACT US</a></li>
+    </ul>
+    <a href="login.html" class="btn"><i class="fa-solid fa-user"></i></a>
+    <div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+  </nav>
+<head>
+<title>GRAPH KHUSUS</title>
+</head>
+<body>
+
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 16px;
+  padding:5px 5px 3px 5px;
+  margin-left: 25px;
+}
+h2{
+  text-align: center;
+  font-family: helvetica;
+  font-size: 25px;
+  font-style: bold;
+}
+p{
+  font-family: helvetica;
+  font-size: 16px;
+  padding:20px 0px 10px 20px;
+}
+</style>
+<body>
+<h2 style="padding-top: 20px">GRAPH KHUSUS</h2>
+<p>Berikut beberapa jenis graph khusus:</p>
+
+<table style="width:95%">
+  <tr>
+    <th style="width:40px">No</th>
+    <th style="width:150px">Jenis Graph</th> 
+    <th style="width:300px">Pengertian</th>
+    <th style="width:170px">Contoh</th>
+  </tr>
+  <tr style="height:auto">
+    <td>1.</td>
+    <td>Graph Lengkap</td>
+    <td style="text-align:justify">Graph sederhana yang setiap titiknya bertetangga dengan seluruh titik lain pada graph tersebut. Notasi graph lengkap adalah K<sub>n</sub> dengan n adalah jumlah titik pada graph tersebut. Jumlah sisi pada graph lengkap adalah <p style="text-align:center"> K<sub>n</sub>= n(n-1)/2 </p></td>
+    <td><img src="img/Graph Lengkap.png" width="400px" height="120px"></td>
+  </tr>
+  <tr style="height:auto">
+    <td>2.</td>
+    <td>Graph Lingkaran</td>
+    <td style="text-align:justify">Graph sederhana yang setiap titiknya berderajat dua. Graph lingkaran dilambangkan C<sub>n</sub> dengan n ≥ 3. </td>
+    <td><img src="img/Graph Lingkaran.png" alt="Graph Lingkaran" width="300px" height="100px"></td>
+  </tr>
+  <tr>
+  <tr style="height:auto">
+    <td>3.</td>
+    <td >Graph Teratur</td>
+    <td style="text-align:justify"> Graph yang setiap titiknya mempunyai derajat yang sama. Apabila derajat tiap simpul dinyatakan sebagai r, maka disebut graph teratur berderajat r. 
+    <p style="text-align:center">nr/2=|E(G)|</p></td>
+    <td><img src="img/Graph Teratur.png" alt="Graph Lingkaran" width="350px" height="250px"></td>
+  </tr>
+  <tr style="height:auto">
+    <td>4.</td>
+    <td>Graph Bipartite</td>
+    <td style="text-align:justify"> Graph yang setiap titiknya dapat dipisah menjadi dua himpunan bagian V<sub>1</sub> dan V<sub>2</sub> sedemikian sehingga setiap sisi pada G menghubungkan titik di V<sub>1</sub> ke sebuah titik di V<sub>2</sub>. Dinyatakan dengan G(V<sub>1</sub>,V<sub>2</sub>) </td>
+    <td><img src="img/Graph Bipartit.png"width="400px" height="150px"></td>
+  </tr>
+    <tr style="height:auto">
+    <td>5.</td>
+    <td>Graph Multipartite</td>
+    <td style="text-align:justify"> Graph yang setiap titiknya dapat dipisah menjadi n subhimpunan bagian V<sub>1</sub>, V<sub>2</sub>, hingga V<sub>n</sub> sedemikian sehingga setiap sisi pada G menghubungkan titik di subhimpunan dengan subhimpunan lainnya.</td>
+    <td><img src="img/Graph Multipartit.png"width="150px" height="150px"></td>
+  </tr>
+    <tr style="height:auto">
+    <td>6.</td>
+    <td>Graph Roda</td>
+    <td style="text-align:justify">Graph yang diperoleh dengan cara menambahkan satu titik pada graph lingkaran, dan menghubungkan titik baru tersebut dengan semua titik pada graph lingkaran. Notasi graph roda adalah W<sub>n</sub> dengan n adalah jumlah titik pada graph tersebut ≥ 3  <p style="text-align:center; font-style:bold;">Note : n merupakan jumlah titik pada tepi graph</p></td>
+    <td><img src="img/Graph Roda.JPG"width="300px" height="200px"></td>
+  </tr>
+    <tr style="height:auto">
+    <td>7.</td>
+    <td> Graph Planar</td>
+    <td style="text-align:justify"> Graph yang dapat digambarkan pada bidang datar dengan sisi-sisi yang tidak saling berpotongan <ul style="padding-left: 20px;">
+      <li>Semua graph lingkaran merupakan graph planar</li>
+      <li>Graph lengkap K<sub>1</sub>, K<sub>2</sub>, K<sub>3</sub>, dan K<sub>4</sub> merupakan graph planar</li>
+      <li>Graph lengkap Kn untuk n ≥ 5 bukan merupakan graph planar</li>
+    </ul> </td>
+    <td><img src="img/Graph Planar.png"width="100px" height="100px"></td>
+  </tr>
+    <tr style="height:auto">
+    <td>8.</td>
+    <td>Graph Bidang</td>
+    <td style="text-align:justify"> Graph planar yang digambarkan dengan sisi-sisi yang tidak salig berpotongan.</td>
+    <td><img src="img/Graph Bidang.png"width="100px" height="100px"></td>
+  </tr>
+    <tr style="height:auto">
+    <td>9.</td>
+    <td>Graph Platonic</td>
+    <td style="text-align:justify"> Graph yang dibentuk oleh sisi-sisi dan titik-titik dari lima platonic, yaitu: tetrahedron, octahedron, cube, icosahedron, dodecahedron. </td>
+    <td><img src="img/Graph Platonic.png"width="400px" height="120px"></td>
+  </tr>
+    <tr style="height:auto">
+    <td>10.</td>
+    <td>Graph Petersen</td>
+    <td style="text-align:justify"> Graph teratur 3 dengan 10 titik dan 15 sisi.</td>
+    <td><img src="img/Graph Petersen.png"width="400px" height="120px"></td>
+  </tr>
+  <tr style="height:auto">
+    <td>11.</td>
+    <td>Graph Null</td>
+    <td style="text-align:justify"> Graph yang tidak memiliki sisi.</td>
+    <td><img src="img/Graph null.png"width="400px" height="120px"></td>
+  </tr>
+  <tr style="height:auto">
+    <td>12.</td>
+    <td>Graph Kubus</td>
+    <td style="text-align:justify"> Graph kubus adalah graph sederhana yang himpunan titiknya berupa himpunan tupel-n biner(a<sub>1</sub>,a<sub>2</sub>,...,a<sub>n</sub>), yaitu a<sub>1</sub> adalah 0 atau 1 dengan i=1,2,3,...,n dan dua titik terhubung langsung jika dan hanya jika dua tupel yang bersesuaian berbeda tepat disatu tempat. <p style="text-align:center; font-style:bold;">Graph kubus dinotasikan dengan Q<sub>n</sub></p></td>
+    <td><img src="img/Graph Kubus.png"width="400px" height="200px"></td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+</body>
+</html>

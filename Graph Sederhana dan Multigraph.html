@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MathNet.</title>
+<link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+	<script src="https://kit.fontawesome.com/6b080b2b1e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+/*Style the header*/
+h2 {
+  font-family: Helvetica;
+  text-align: center;
+}
+p{
+ font-family: Helvetica;
+  font-size: 16px;
+  color: Black;  
+  text-align: left; 
+  padding: 20px 20px 0px 30px;
+}
+ol{
+  text-align: left;
+  margin-left: 50px;
+}
+.search-box{
+	background-color: #C8C8C8;
+	height: 36px;
+	padding: 8px 15px;
+	border-radius: 50px;
+
+}
+.search-box input{
+	border:none;
+	outline: none;
+	background:none;
+	width: 200px;
+}
+.search-box a{
+	color: black;
+}
+/* Create two columns/boxes that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+/* Left column */
+.column.side {
+  float: left;
+  width: 60%;
+  height: auto; /* only for demonstration, should be removed */
+  background: #efefef;
+  padding: 20px;
+  padding-top: 0px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: Helvetica ;
+}
+
+/*right column */
+.column.right {
+  float: right;
+  text-align: center;
+  padding: 50px 20px 0px 0px;
+  width: 40%;
+  background-color: #efefef;
+  height: 600px; /* only for demonstration, should be removed */
+}
+
+/* Style the footer */
+.footer {
+  float: left;
+  width: 100%;
+  height: auto; /* only for demonstration, should be removed */
+  padding-left: 20px;
+  padding-bottom: 50px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: Helvetica ;
+}
+a {
+  color: #1e446c;
+}
+
+/* Clear floats after the columns */
+row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+<body>
+
+
+<div class="home">
+	<nav>
+		<h2 class="logo"><img src="logo.png"></h2>
+		<ul>
+			<li class="active"><a href="index.html">HOME</a></li>
+			<li><a href="About us.htm">ABOUT</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">TOPIC</a>
+					<div class="dropdown-content">
+						<a href="Graph Sederhana dan Multigraph.html">Graph Sederhana dan Multigraph</a>
+						<a href="Subgraph.htm">Subgraph</a>
+						<a href="Graph Khusus.htm">Graph Khusus</a>
+					</div>
+			</li>
+			<li><a href="Contact Us 2.php">CONTACT US</a></li>
+		</ul>
+		<a href="login.html" class="user"><i class="fa-solid fa-user"></i></a>
+		<div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+	</nav>
+
+	<h2 style="padding-top: 20px"> GRAPH SEDERHANA </h2>
+
+	<div class="row">
+		<div class="column side">
+		<p> Sudahkah kalian mengetahui <strong>Graph Sederhana</strong>?</p>
+		<p><strong>Graph sederhana</strong> adalah graph yang tidak memuat <strong>sisi rangkap</strong> dan <strong><i>loop.</i></strong></p>
+		<p>Apa sih yang dimaksud dengan <strong>sisi rangkap</strong> dan <strong><i>loop</i></strong>? </p>
+		<p><strong>Sisi rangkap</strong> adalah dua sisi atau lebih yang menghubungkan pasangan titik yang sama. Sedangkan, <strong><i>Loop</i></strong> adalah sisi yang menghubungkan suatu titik dengan dirinya sendiri.</p>
+		<p>Supaya lebih mudah dalam memahami, perhatikan contoh berikut ini!</p>
+		<img src="img/Graph sederhana (1).png" width="600" height="225">
+		<p> Manakah yang merupakan <strong>Graph sederhana</strong>? Ayo kita bahas bersama-sama!</p>
+			<ol style="padding-left: 40px">
+				<p><li>Graph <i>(a)</i> merupakan graph yang memuat sisi rangkap</li></p>
+				<p><li>Graph <i>(b)</i> merupakan graph yang memuat <i>loop</i></li></p>
+				<p><li>Graph <i>(c)</i> merupakan graph yang tidak memuat sisi rangkap dan <i>loop</i></li></p>
+			</ol>
+		<p> Maka yang merupakan Graph Sederhana adalah Graph <i>(c)</i>. Hal ini karena Graph <i>(c)</i> tidak memuat sisi rangkap dan <i>loop</i></p>
+		</div>
+
+		<div class="column right">
+			<h4>Ayo simak video berikut ini!</h4><br><hr align="center" size="5" color="#2F748E" noshade><br>
+			<iframe width="400" height="250" src="https://www.youtube.com/embed/7OgJ6lJ8cMk?si=mabyk8af1JAk1Dv5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+			</iframe>
+		</div>
+
+		<div class="footer">
+		<h2>MULTIGRAPH</h2>
+		<p> Kebalikan dari Graph Sederhana, <strong>Multigraph</strong> merupakan graph yang memuat <strong>sisi rangkap</strong> dan <strong><i>loop.</i></strong> Supaya lebih mudah dalam memahami, perhatikan contoh berikut ini!</p>
+		<img src="img/MultiGraph.png" width="650" height="225">
+		<p> Manakah yang merupakan <strong>Multigraph</strong>? Ayo kita bahas bersama-sama!</p>
+			<ol>
+				<p><li>Graph <i>(e)</i> merupakan graph yang memuat sisi rangkap dan <i>loop</i></li></p>
+				<p><li>Graph <i>(f)</i> merupakan graph yang memuat sisi rangkap dan <i>loop</i></li></p>
+				<p><li>Graph <i>(g)</i> merupakan graph yang memuat sisi rangkap dan <i>loop</i></li></p>
+			</ol>
+		<p> Maka graph <i>(e)</i>, graph <i>(f)</i>, graph <i>(g)</i> merupakan multigraph. Hal ini karena ketiga graph tersebut memuat sisi rangkap dan <i>loop</i>.</p>
+		<p>Simaklah video berikut ini! <b><a href="https://youtu.be/2TxdysMT-jw?si=6fxPVjMJsYh8HMn-" target="_blank">Link Penjelasan Graph Sederhana dan Multigraph</a></b></p>
+		</div>
+
+</body>
+</html>

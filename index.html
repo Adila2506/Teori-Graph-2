@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial scale=1 , minimum-scale=1, maximum-scale=1">
+	<title>Mathnet</title>
+	<!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+	<script src="https://kit.fontawesome.com/6b080b2b1e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 400px;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #efefef;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+     </style>
+</head>
+<body>
+
+<div class="home">
+	<nav>
+		<h2 class="logo"><img src="logo.png"></h2>
+		<ul>
+			<li class="active"><a href="index.html">HOME</a></li>
+			<li><a href="About us.htm">ABOUT</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">TOPIC</a>
+					<div class="dropdown-content">
+						<a href="Graph Sederhana dan Multigraph.html">Graph Sederhana dan Multigraph</a>
+						<a href="Subgraph.htm">Subgraph</a>
+						<a href="Graph Khusus.htm">Graph Khusus</a>
+					</div>
+			</li>
+			<li><a href="Contact Us 2.php">CONTACT US</a></li>
+		</ul>
+		<a href="login.html" class="user"><i class="fa-solid fa-user"></i></a>
+		<div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+	</nav>
+	<div class="banner">
+		<img src="banner2.png" width="100%" height="600px">
+	</div>
+	<div class="content">
+	    <br>
+		<a href="Materi Graph.htm">READ MORE</a>
+	</div>
+	<section class="OURTOPIC">
+		<div class="tittle">
+			<h2>OUR TOPIC</h2>
+		</div>
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h3>Graph Sederhana dan Multigraph</h3>
+				<div class="pra">
+				<p>Graph sederhana adalah graph tidak memiliki loop dan sisi rangkap.</p>
+				<p style="text-align: center;">
+					<a href="Graph Sederhana dan Multigraph.html">READ MORE</a>
+				</div>
+			</div>
+			<div class="card2">
+				<i class="fas fa-bars"></i>
+				<h4>Graph Khusus</h4>
+				<div class="pra2">
+				<p>Graph khusus terdiri dari graph lengkap, graph lingkaran, graph bipartit, graph reguler, graph planar...</p>
+				<p style="text-align: center;">
+					<a href="Graph Khusus.htm">READ MORE</a>
+				</div>
+			</div>
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h3>Subgraph</h3>
+				<div class="pra">
+				<p>Subgraph dari G adalah graph yang semua titiknya merupakan titik dari G dan semua sisinya...</p>
+				<p style="text-align: center;">
+				<br><br>
+					<a href="Subgraph.htm">READ MORE</a>
+				</div>
+			</div>
+		</div>
+	</section>
+		<div class="aboutus">
+			<img src="aboutus.jpg">
+			<div class="aboutus-text">
+				<h4>ABOUT US</h4>
+				<p>“Selamat datang di Mathnet, website yang mengulas materi teori graph secara komprehensif. 
+					<br>Di sini, kalian akan menemukan penjelasan mendalam tentang teori graph.</p>
+				<a href="About us.htm">READ MORE</a>
+			</div>
+		</div> <br> <br>
+	<section class="TESTIMONIAL">
+		<div class="tittle">
+			<h2>TESTIMONIAL</h2> <br> <br>
+		</div>
+		<!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="testimoni/gery1.png">
+        </div>
+        <div class="swiper-slide">
+            <img src="testimoni/onej.png">
+        </div>
+        <div class="swiper-slide">
+            <img src="testimoni/cea.png">
+        </div>
+        <div class="swiper-slide">
+            <img src="testimoni/johnny.png">
+        </div>
+        <div class="swiper-slide">
+            <img src="testimoni/mark3.png">
+        </div>
+        <div class="swiper-slide">
+            <img src="testimoni/ningsih.png">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+	</section>
+	<!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+   <!--footer-->
+   <br>
+   <br>
+	<footer>
+		<div class="container">
+			<small style="color: white;">Copyright &copy;-Mathnet, All Rights Reserved.</small>
+		</div>
+	</footer>
+</body>
+</html>	

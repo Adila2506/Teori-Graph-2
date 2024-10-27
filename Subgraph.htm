@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title>Mathnet</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<script src="https://kit.fontawesome.com/6b080b2b1e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+   
+</head>
+<body>
+
+<div class="home">
+	<nav>
+		<h2 class="logo"><img src="logo.png"></h2>
+		<ul>
+			<li class="active"><a href="index.html">HOME</a></li>
+			<li><a href="About us.htm">ABOUT</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">TOPIC</a>
+					<div class="dropdown-content">
+						<a href="Graph Sederhana dan Multigraph.html">Graph Sederhana dan Multigraph</a>
+						<a href="Subgraph.htm">Subgraph</a>
+						<a href="Graph Khusus.htm">Graph Khusus</a>
+					</div>
+			</li>
+			<li><a href="Contact Us 2.php">CONTACT US</a></li>
+		</ul>
+		<a href="login.html" class="btn"><i class="fa-solid fa-user"></i></a>
+		<div class="search-box">
+      <input type="text" placeholder="Search..." />
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+	</nav>
+<head>
+<title>SUBGRAPH</title>
+</head>
+<body>
+<style>
+h2{
+	text-align: center;
+}
+body {
+  margin: 0;
+}
+h3{
+  text-align: left;
+  padding-top: 20px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 50%;
+  text-align:justify;;
+  font-size: 16px;
+  padding: 50px 50px 20px 50px;
+}
+
+  font-family: helvetica
+/* Middle column */
+.column.middle {
+  width: 30%;
+  text-align: center;
+  font-family:helvetica;
+  font-size: 16px;
+  padding: 50px 0px 30px 50px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 100%) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+ }
+</style>
+</head>
+<body>
+<h2 style="padding-top: 20px">SUBGRAPH</h2>
+
+<div class="row">
+  <div class="column side">
+    <p>Subgraph dari G adalah graph yang semua titiknya merupakan titik dari G dan semua sisinya merupakan sisi dari G. Misalkan G=(V,E) adalah sebuah graph, maka G<sub>1</sub>=(V<sub>1</sub>,E<sub>1</sub>) adalah subgraph dari G jika V<sub>1</sub> ⊆ V dan E<sub>1</sub> ⊆ E.</p>
+    <br>
+    <p>Berikut ini merupakan contoh gambar subgraph:</p>
+    <br>
+<img src="img/Subgraph.png" alt="Subgraph"> <br> <br>
+<p><strong>Untuk mengukur kemmapuan kalian terkait materi Subgraph, silahkan kerjakan link soal berikut!</strong> <b><a href="https://drive.google.com/file/d/1mrbIojTfUPCC7guo8X0_yr3ifZPSwCe1/view?usp=sharing" target="_blank">Link Soal Subgraph</a></b></p> <br>
+  <p><strong>Silahkan jawaban kalian dalam bentuk PDF!</strong></p> <br>
+  <form action="proses_upload.php" method="POST" enctype="multipart/form-data">
+        <label for="pdfFile">Pilih file PDF:</label>
+        <input type="file" name="pdfFile" id="pdfFile">
+        <button type="submit" name="submit">Unggah</button>
+    </form>
+  </div>
+  
+  <div class="column middle">
+    <H3>Berikut video pembahasan terkait subgraph</H3><br>
+    <p><iframe width="400" height="230" src="https://www.youtube.com/embed/2dNlIqI8_O8?si">
+</iframe></p> <br>
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
+
